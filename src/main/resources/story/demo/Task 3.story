@@ -86,13 +86,9 @@ When I execute HTTP PUT request for resource with relative URL `/pet`
 Then response code is equal to `200`
 
 
-Scenario: Verify that allows deleting Pet 
+Scenario: Verify that allows deleting Pet
 When I add request headers:
 |name         |value  |
 |Content-Type |application/json |
 When I execute HTTP DELETE request for resource with relative URL `/pet/3`
 Then response code is equal to `200`
-
-
-
-
