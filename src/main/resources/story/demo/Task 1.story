@@ -76,6 +76,3 @@ Scenario: Check that the Company logo on the header lead to the main page
 When I go to relative URL `https://www.epam.com/about`
 When I click on element located by `imageSrc(/content/dam/epam/homepage/epam_logo_light.svg)`
 Then `${current-page-url}` is equal to `https://www.epam.com/`
-
-
-

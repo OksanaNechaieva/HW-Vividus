@@ -52,7 +52,7 @@ Then dropdown located by `id(products-viewmode)` contains options:
 |true|Grid  |
 |false|List|
 
-Scenario: Verify that allows sorting items 
+Scenario: Verify that allows sorting items
 When I select `Name: Z to A` in dropdown located by `id(products-orderby)`
 When I select `Created on` in dropdown located by `id(products-orderby)`
 When I select `Price: Low to High` in dropdown located by `id(products-orderby)`
@@ -97,7 +97,7 @@ Scenario: Verify that allows removing an item from the card
 When I enter `0` in field located by `xpath((//td[@class='qty nobr'])[1]//input)`
 When I click on element located by `name(updatecart)`
 
-Scenario: Verify that allows checkout an item 
+Scenario: Verify that allows checkout an item
 When I check checkbox located by `id(termsofservice)`
 When I click on element located by `id(checkout)`
 When I select `Bahrain` in dropdown located by `id(BillingNewAddress_CountryId)`
@@ -118,22 +118,3 @@ Scenario:Delete address
 When I click on element located by `xpath(//*[@href="/customer/addresses"])`
 When I click on element located by `xpath(//div[@class='buttons']//input[last()])`
 When I ACCEPT alert with message which is equal to `Are you sure?`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
